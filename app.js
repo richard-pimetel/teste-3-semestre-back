@@ -38,7 +38,7 @@ app.get('/v1/whatsapp/data/contact/user/', async function(request, response) {
     }
 });
 
-app.get('   ', async function(request, response) {
+app.get('/v1/whatsapp/filter/', async function(request, response) {
     let number = request.query.nu;
     let name = request.query.na;
     let word = request.query.wo;
