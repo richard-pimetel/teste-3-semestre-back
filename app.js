@@ -1,3 +1,11 @@
+/*****************************************************************************************
+ * Objetivo: Atividade De Contatos
+ * Data: 06/02/2025
+ * Autor: Richard
+ * Versão: 1.0
+ * ***************************************************************************************/
+
+
 const express = require('express');
 const cors = require('cors');
 const functionsContatos = require('./modulo/funcoes.js');
@@ -54,3 +62,17 @@ app.get('/v1/whatsapp/filter/', async function(request, response) {
 app.listen(8080, function() {
     console.log('API aguardando requisição ...');
 });
+
+
+
+//http certo do postman 
+//http://localhost:8080/v1/whatsapp/data/user/unalterable/?nu=11987876567
+//http://localhost:8080/v1/whatsapp/data/user/editable/?nu=11987876567
+//http://localhost:8080/v1/whatsapp/data/contact/user/?nu=11987876567
+//http://localhost:8080/v1/whatsapp/filter/?nu=11987876567&na=Ana Maria&wo=Oi
+//http://localhost:8080/v1/whatsapp/filter/?nu=11987876567&na=Ana Maria
+
+
+
+
+
